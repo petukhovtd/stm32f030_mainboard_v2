@@ -154,3 +154,13 @@ void LCDPrint( uint8_t *str )
           LCDSendDate( data );
      }
 }
+
+void LCDPrint2Str( uint8_t* str1, uint8_t* str2 )
+{
+     LCDCursorBlink( 'D' );
+     LCDClear();
+     LCDCursorPositionYX( 0, 0 );
+     LCDPrint( &str1 );
+     LCDCursorPositionYX( 1, 0 );
+     LCDPrint( &str2 );
+}

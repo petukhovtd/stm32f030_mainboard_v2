@@ -47,5 +47,5 @@ void LCDCursorPositionYX( uint8_t Y, uint8_t X );
 
 void LCDPrint( uint8_t *str );
 
-
+void LCDPrint2Str( uint8_t* str1, uint8_t* str2 );
 #endif
